@@ -1,82 +1,15 @@
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.SwipeRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/refreshLayout"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="vertical"
-    tools:context=".MainActivity">
-    <Button
-        android:onClick="gotoLinearActivity"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="10dip"
-        android:text="LinearLayoutManager"/>
+    android:layout_height="match_parent">
 
-    <Button
-        android:onClick="gotoStickyScrollLinearActivity"
+    <com.jcodecraeer.xrecyclerview.XRecyclerView
+        android:id="@+id/xRecyclerView"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="10dip"
-        android:text="StickyScrollLinearActivity"
-        />
+        android:layout_height="match_parent" />
 
-    <Button
-        android:onClick="gotoGridActivity"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="10dip"
-        android:text="GridLayoutManager"
-        />
-    <Button
-        android:onClick="gotoStaggeredGridActivity"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="10dip"
-        android:text="StaggeredGridLayoutManager"
-        />
 
-    <Button
-        android:onClick="gotoEmptyViewActivity"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="10dip"
-        android:text="emptyViewSupport"
-        />
-    <Button
-        android:onClick="gotoCollapsingToolbarLayoutActivity"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="10dip"
-        android:text="CollapsingToolbarLayoutTest"
-        />
-    <Button
-        android:onClick="gotoDisableExampleActivity"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="10dip"
-        android:text="DisableExampleActivity"
-        />
-    <Button
-        android:onClick="gotoMultiHeaderActivity"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="10dip"
-        android:text="MultiHeaderActivity"
-        />
-    <Button
-        android:onClick="gotoItemDecorationActivity"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="10dip"
-        android:text="ItemDecorationActivity"
-        />
-
-    <Button
-        android:onClick="gotoItemAlphaChangeActivity"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="10dip"
-        android:text="AlphaChangeActivity"
-        />
-
-</LinearLayout>
+</android.support.v4.widget.SwipeRefreshLayout>
